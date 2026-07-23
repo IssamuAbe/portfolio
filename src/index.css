@@ -1,0 +1,145 @@
+:root {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+
+  color: #f8fafc;
+  background-color: #0f172a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  --color-background: #0f172a;
+  --color-surface: #172033;
+  --color-surface-light: #1e293b;
+
+  --color-primary: #38bdf8;
+  --color-primary-dark: #0284c7;
+
+  --color-text: #f8fafc;
+  --color-text-muted: #94a3b8;
+
+  --color-border: #334155;
+
+  --container-width: 1200px;
+  --header-height: 72px;
+
+  --border-radius-small: 8px;
+  --border-radius-medium: 16px;
+  --border-radius-large: 24px;
+
+  --transition: 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 15% 10%,
+      rgba(56, 189, 248, 0.08),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 85% 30%,
+      rgba(37, 99, 235, 0.08),
+      transparent 32%
+    ),
+    var(--color-background);
+
+  color: var(--color-text);
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.container {
+  width: min(90%, var(--container-width));
+  margin-inline: auto;
+}
+
+.section {
+  padding: 96px 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 72px 0;
+  }
+}
+
+section {
+  scroll-margin-top: 72px;
+}
+
+main {
+  padding-top: 72px;
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
+  content: '';
+
+  background-image:
+    linear-gradient(
+      rgba(148, 163, 184, 0.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(148, 163, 184, 0.035) 1px,
+      transparent 1px
+    );
+
+  background-size: 48px 48px;
+
+  pointer-events: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
