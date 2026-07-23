@@ -10,7 +10,7 @@ Este projeto foi desenvolvido em **React + TypeScript** durante o curso de Desen
 
 ### 🔗 Portfólio Online
 
-> **Em breve:** https://SEU-LINK-VERCEL.vercel.app
+> https://portfolio-psi-cyan-56.vercel.app/
 
 ### 💻 Repositório
 
